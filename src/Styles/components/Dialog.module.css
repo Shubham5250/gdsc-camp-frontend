@@ -1,0 +1,25 @@
+.dialog {
+  display: none;
+}
+
+.dialog i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.opened {
+  display: block;
+}
+
+.dialogContent {
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fdfdfd;
+  padding: 20px;
+  z-index: 2;
+  width: 450px;
+  border-radius: 7px;
+}
