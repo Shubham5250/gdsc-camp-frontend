@@ -7,7 +7,24 @@ const Dialog = ({ openDialog, setOpenDialog, title, children }) => {
       className={
         openDialog ? `${styles.dialog} ${styles.opened}` : styles.dialog
       }
-    ></div>
+    >
+      <div className={styles.dialogContent}>
+        <div className={styles.dialogHeader}>
+          <i
+            className="uil uil-times-circle"
+            onClick={() => setOpenDialog(!openDialog)}
+          ></i>
+          <h4>{title}</h4>
+        </div>
+
+        <div className={styles.contentWrapper}>{children}</div>
+      </div>
+
+      <div
+        className={styles.dialogMask}
+        onClick={() => setOpenDialog(!openDialog)}
+      ></div>
+    </div>
   );
 };
 

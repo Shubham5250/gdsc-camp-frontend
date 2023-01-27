@@ -91,7 +91,74 @@ const Layout = ({ children }) => {
 
       {children}
 
-      {/* /* Footer */}
+      <footer className={styles.footer}>
+        <img src="/images/logo.svg" alt="GDSC-PESMCOE-LOGO" />
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+              <span>
+                <Link to="/">Home</Link>
+              </span>
+            </li>
+            <li>
+              <span>
+                <Link to="/events">Events</Link>
+              </span>
+            </li>
+            <li>
+              <span>
+                <Link to="/team">Team</Link>
+              </span>
+            </li>
+            {/* <li>
+              <span>
+                <Link to="/quiz">Quiz</Li>
+              </span>
+            </li> */}
+            <li>
+              <span>
+                <Link to="/contact">Contact</Link>
+              </span>
+            </li>
+            <li>
+              <span>
+                <Link to="/signup">Register</Link>
+              </span>
+            </li>
+          </ul>
+          <h3>Socials</h3>
+          <div className={styles.socials}>
+            <div className={styles.social}>
+              <Link
+                to="https://www.instagram.com/gdsc_pesmcoe/"
+                target="_blank"
+              >
+                <i className="uil uil-instagram"></i>
+              </Link>
+            </div>
+            <div className={styles.social}>
+              <Link
+                to="https://www.linkedin.com/company/gdsc-pesmcoe/"
+                target="_blank"
+              >
+                <i className="uil uil-linkedin-alt"></i>
+              </Link>
+            </div>
+            <div className={styles.social}>
+              <Link
+                to="https://twitter.com/gdsc_pesmcoe?s=20&t=AXGA6MhC0e3y8NOBkUOjHA"
+                target="_blank"
+              >
+                <i className="uil uil-twitter-alt"></i>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <p>
+          <i className="uil uil-copyright"></i> GDSC-PES MCOE
+        </p>
+      </footer>
     </div>
   );
 };
